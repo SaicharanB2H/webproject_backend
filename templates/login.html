@@ -105,6 +105,9 @@
             font-size: 14px;
             margin-bottom: 5px;
         }
+        h1{
+          color: #ff2768;
+        }
     </style>
 </head>
 <body>
@@ -152,13 +155,25 @@
     <section>
         <div class="container login-container">
             <h1>Login</h1>
-            <form>
-                <input type="email" class="input-field" placeholder="Email" required>
-                <input type="password" class="input-field" placeholder="Password" required>
+            {% with messages = get_flashed_messages(with_categories=true) %}
+            {% if messages %}
+              <div class="container mt-3">
+                {% for category, message in messages %}
+                  <div class="alert alert-{{ category }} alert-dismissible fade show" role="alert">
+                    {{ message }}
+                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                  </div>
+                {% endfor %}
+              </div>
+            {% endif %}
+          {% endwith %}
+            <form method="POST" action="{{ url_for('login') }}">
+                <input type="email" name="email" class="input-field" placeholder="Email" required>
+                <input type="password" name="password" class="input-field" placeholder="Password" required>
                 <a href="#" class="forgot">Forgot Password?</a>
                 <button type="submit" class="login-btn">Login</button>
             </form>
-            <p><a href="login.html">Create a new account</a></p>
+            <p><a href="{{url_for('userReg')}}">Create a new account</a></p>
         </div>
     </section>
 	
