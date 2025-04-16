@@ -1,0 +1,402 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+header{
+    background-color:rgb(255, 39, 104) ;
+    display: flex;
+    justify-content: center;
+}
+
+.hp{
+    padding: 6px 0px;
+    color: white;   
+    
+}
+
+#hp1{
+    margin: 0px;  
+}
+
+.hp-co{
+    width: 100%;
+    margin: 0;
+
+}
+.logo{
+    width: 10%;
+    display: flex;
+    align-items: center;
+    font-family: outfit;
+}
+.logo img{
+    width: 80px;
+    padding: 5px;
+}
+
+.logo h2{
+    margin-top: 15px;
+    color: rgb(255, 41, 105);
+}
+
+.mainhead{
+    display: flex;
+    align-items: center;
+    justify-content :space-around;
+    background-color: #ffffff;
+}
+
+.links{
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.links ul {
+    display: flex;
+    align-items: center;
+    
+}
+
+.links ul li{
+    
+    list-style-type: none;
+    margin: 0px 10px ;
+    text-align: center;
+
+    
+}
+.links ul li a{
+    text-decoration: none;
+    color: black;
+}
+
+.fa-solid{
+    padding: 3px;
+}
+
+.group {
+    display: flex;
+    line-height: 28px;
+    align-items: center;
+    position: relative;
+    width: 50vw;
+   }
+   
+.input {
+    width: 100%;
+    height: 50px;
+    line-height: 28px;
+    padding: 0 1rem;
+    padding-left: 2.5rem;
+    border: 2px solid transparent;
+    border-radius: 8px;
+    outline: none;
+    background-color: #f3f3f4;
+    color: #0d0c22;
+    transition: .3s ease;
+   }
+   
+.input::placeholder {
+    color: #9e9ea7;
+   }
+   
+.input:focus, input:hover {
+    outline: none;
+    border-color: rgba(234,76,137,0.4);
+    background-color: #fff;
+    box-shadow: 0 0 0 4px rgb(234 76 137 / 10%);
+   }
+   
+.icon {
+    position: absolute;
+    left: 1rem;
+    fill: #9e9ea7;
+    width: 1rem;
+    height: 1rem;
+   }
+
+.headerlinks ul{
+    display: flex;
+    list-style-type: none;
+    justify-content: center;
+    
+}
+
+.headerlinks ul li{
+    margin: 0px 30px;
+    padding: 5px;
+    color: #6d6d6d;
+}
+
+.headerlinks ul li a{
+    text-decoration: none;
+    color: #6d6d6d;
+}
+   
+
+/* owl */
+
+.container {
+    width: 98%;
+    margin:0px;
+    padding: 20px;
+}
+
+#cont{
+    max-width: 1360px;
+}
+
+.owl-carousel .item {
+    /* background: #ec0a0a; */
+    /* padding: 20px; */
+    border-radius: 10px;
+    /* box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.1); */
+    width: 92%;
+    height: 300px;
+    transition: all 1s ease;
+    margin: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    
+
+}
+.item h3{
+    margin-top: 10px;
+    position: relative;
+    bottom: 0px;
+}
+
+
+
+
+.circle1{
+    width: 90%;
+    height: 200px;
+    /* background-color: #9e9ea7; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.circleimg{
+    width: 75%;
+    height: 280px;
+    /* background-color: rosybrown; */
+    
+    border-radius: 100%;
+    margin: 20px;
+    transition: all 1s ease;
+    
+}
+
+/* images in carosel */
+
+.im1{
+    background-image: url("https://www.giva.co/cdn/shop/collections/pink_necklaces_pend_copy.jpg?v=1736837743");
+    background-size: cover;
+    background-position: center;
+}
+
+.im2{
+    background-image: url("https://www.giva.co/cdn/shop/collections/pink_rings_c356f6b3-6547-4e39-9b08-dfdf5ecfc2b0.jpg?v=1736837741");
+    background-size: cover;
+    background-position: center;
+
+}
+.im3{
+    background-image: url("https://www.giva.co/cdn/shop/collections/earrings_pink-min.png?v=1736837742");
+    background-size: cover;
+    background-position: center;
+
+}
+.im4{
+    background-image: url("https://www.giva.co/cdn/shop/collections/pink_br-min.png?v=1736837740");
+    background-size: cover;
+    background-position: center;
+
+}
+.im5{
+    background-image: url("https://www.giva.co/cdn/shop/collections/sets_pink.webp?v=1736837738");
+    background-size: cover;
+    background-position: center;
+
+}
+.im6{
+    background-image: url("https://www.giva.co/cdn/shop/collections/anklets_f99dfe60-fc81-457a-ab33-721352c6e672.jpg?v=1736837602");
+    background-size: cover;
+    background-position: center;
+
+}
+.im7{
+    background-image: url("https://www.giva.co/cdn/shop/collections/Frame_2609057-min.jpg?v=1736837603");
+    background-size: cover;
+    background-position: center;
+
+}
+.im8{
+    background-image: url("https://www.giva.co/cdn/shop/collections/Mangalsutras_3.jpg?v=1736837525");
+    background-size: cover;
+    background-position: center;
+
+}
+.im9{
+    background-image: url("https://www.giva.co/cdn/shop/collections/Chains-min.jpg?v=1736837600");
+    background-size: cover;
+    background-position: center;
+
+}
+.im10{
+    background-image: url("https://www.giva.co/cdn/shop/collections/Nose_pin_250_x_250.jpg?v=1736837524");
+    background-size: cover;
+    background-position: center;
+
+}
+.im11{
+    background-image: url("https://www.giva.co/cdn/shop/collections/toe-rings.jpg?v=1736837523");
+    background-size: cover;
+    background-position: center;
+
+}
+.im12{
+    background-image: url("https://www.giva.co/cdn/shop/collections/Personaloised_250_x_250-min.png?v=1737733348");
+    background-size: cover;
+    background-position: center;
+
+}
+
+.circleimg:hover{
+    transform: scale(1.1);
+    box-shadow: 0px 0px 5px black;
+}
+
+.owl-carousel img {
+    width: 51%;
+    border-radius: 10px;
+}
+
+.fa-chevron-left{
+    position: relative;
+    top: -190px;
+    left: -21px;
+}
+.fa-chevron-right{
+    position: relative;
+    top: -190px;
+    left: calc(86vw + 10px);
+}
+
+.item h3{
+    color: #4b4b4b;
+}
+
+.bigimg{
+    display: flex;
+    
+}
+
+.ltimg img{
+    width: 100%;
+    height: auto;
+    
+}
+
+.rtimg img{
+    width: 100%;
+    height: auto;
+    
+    
+}
+
+#mainimg1{
+    aspect-ratio:30/9 ;
+    object-fit: cover;
+}
+#mainimg2{
+    aspect-ratio:30/9 ;
+    object-fit: cover;
+}
+#mainimg3{
+    aspect-ratio:30/9 ;
+    object-fit: cover;
+}
+   
+   
+.mimg1{
+    display: flex;
+}
+
+.ltimg1,.ltimg2{
+    margin: 5px;
+}
+
+.ltimg1 img,.ltimg2 img{
+    width: 100%;
+    height: auto;
+    
+}
+
+.contimgs{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sp{
+    margin-top: -7px;
+}
+
+.cf1 img {
+    width: 80%;
+    height: auto;
+    object-fit: cover;
+}
+
+.cfimg1 img{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+.cfimg2 img{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.onlycont1{
+    display: flex;
+    justify-content: center;
+}
+
+.onlycont img{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.singleimg{
+    display: flex;
+    justify-content: center;
+}
+.famcont{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    
+
+}
+
+.cf1img img{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.logo_link{
+    text-decoration: none;
+}
