@@ -149,6 +149,10 @@
       padding: 20px;
       border-top: 1px solid #eee;
     }
+    .logolink{
+      text-decoration: none;
+      color: black;
+    }
   </style>
 </head>
 <body>
@@ -177,7 +181,7 @@
       <div class="links">
         <ul>
           <li><i class="fa-solid fa-store"></i> Store</li>
-          <li><a href="login.html"><i class="fa-solid fa-user"></i> Account</a></li>
+          <li><a href="{{url_for('account')}}"><i class="fa-solid fa-user"></i> Account</a></li>
           <li><i class="fa-solid fa-heart"></i> Wishlist</li>
           <li><i class="fa-solid fa-cart-shopping"></i> Cart</li>
         </ul>
@@ -190,7 +194,7 @@
     <div class="container">
       <ul>
         <li> <a href="{{url_for('valentine')}}">Valentine's day 2025</a> </li>
-        <li><a href="lab_diamonds.html">Gold with Lab Diamonds</a></li>
+        <li><a href="{{url_for('Diamonds')}}">Gold with Lab Diamonds</a></li>
         <li>Personalized Jewellery</li>
         <li>Gift stored</li>
         <li>Men's Jewellery</li>
@@ -218,15 +222,21 @@
         </div>
       </article>
       <article class="product-card card-2">
-        <div class="product-image">
-          <img src="https://www.giva.co/cdn/shop/files/GDLPD0182_1.jpg?v=1723893935&width=360" alt="Product 2">
-        </div>
-        <div class="product-info">
-           <h4 class="product-title">Gold Classic Square Diamond Pendant</h4>
-          <p class="product-price">₹12,248</p>
-        </div>
+        
+          <div class="product-image">
+            <img src="https://www.giva.co/cdn/shop/files/GDLR032_1_9c0574fa-b9e7-46d7-9738-9903fb86b989.jpg?v=1727353786&width=360" alt="Product 2">
+          </div>
+          <div class="product-info">
+             <h4 class="product-title">Gold Classic Floret Diamond Ring</h4>
+            <p class="product-price">₹15,713</p>
+          </div>
+
+     
+        
       </article>
+     
       <article class="product-card card-3">
+        <a href="{{url_for('buy')}}" class="logolink"> 
         <div class="product-image">
           <img src="https://www.giva.co/cdn/shop/files/GDLPD0276_1_1a8361a3-de7a-4e82-9550-96f48930a383.jpg?v=1728572835&width=360" alt="Product 3">
         </div>
@@ -234,6 +244,7 @@
            <h4 class="product-title">Gold Eternal Diamond Pendant</h4>
           <p class="product-price">₹10,423</p>
         </div>
+      </a>
       </article>
       <article class="product-card card-4">
         <div class="product-image">
@@ -300,11 +311,11 @@
       </article>
       <article class="product-card card-11">
         <div class="product-image">
-          <img src="https://www.giva.co/cdn/shop/files/GDLR032_1_9c0574fa-b9e7-46d7-9738-9903fb86b989.jpg?v=1727353786&width=360" alt="Product 11">
+          <img src="https://www.giva.co/cdn/shop/files/GDLPD0182_1.jpg?v=1723893935&width=360" alt="Product 11">
         </div>
         <div class="product-info">
-           <h4 class="product-title">Gold Classic Floret Diamond Ring</h4>
-          <p class="product-price">₹15,713</p>
+           <h4 class="product-title">Gold Classic Square Diamond Pendant</h4>
+          <p class="product-price">₹12,248</p>
         </div>
       </article>
       <article class="product-card card-12">

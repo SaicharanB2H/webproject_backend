@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Elegance On The Rise Necklace</title>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Nunito', sans-serif;
+      background-color: #f9f9f9;
+    }
+    header {
+      background: white;
+      padding: 1rem 2rem;
+      box-shadow: 0 1px 5px rgba(0,0,0,0.05);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    header img {
+      height: 35px;
+    }
+    .container {
+      max-width: 1200px;
+      margin: 2rem auto;
+      display: flex;
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.05);
+      overflow: hidden;
+    }
+    .image-section {
+      flex: 1;
+      background: #fff;
+      padding: 2rem;
+    }
+    .image-section img {
+      width: 100%;
+      max-width: 400px;
+      border-radius: 10px;
+    }
+    .details-section {
+      flex: 2;
+      padding: 2rem;
+    }
+    .details-section h1 {
+      margin-top: 0;
+      font-size: 26px;
+    }
+    .price {
+      font-size: 24px;
+      color: #e91e63;
+      font-weight: bold;
+    }
+    .old-price {
+      text-decoration: line-through;
+      color: #888;
+      font-size: 16px;
+      margin-left: 10px;
+    }
+    .rating {
+      color: #fbc02d;
+      margin: 0.5rem 0;
+    }
+    .actions {
+      margin: 1.5rem 0;
+    }
+    .btn {
+      background: #e91e63;
+      color: #fff;
+      border: none;
+      padding: 0.75rem 1.5rem;
+      margin-right: 1rem;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+    .btn:hover {
+      background: #d81b60;
+    }
+    .section {
+      margin-top: 1.5rem;
+    }
+    ul {
+      padding-left: 1rem;
+    }
+    .checkbox-group input {
+      margin-right: 8px;
+    }
+    .logo-link {
+      text-decoration: none;
+      color: inherit;
+    }
+    .headerlinks{
+        margin-top: 10px;
+    }
+    .image-section1{
+        box-shadow: 0px 0px 5px black;
+    }
+    .btn a{
+        text-decoration: none;
+        color: white;
+    }
+  </style>
+</head>
+<body>
+	<section>
+        <nav>
+            <div class="mainhead">
+                <a href="{{url_for('home')}}" class="logo-link">
+                <div class="logo">
+                        <img src="{{ url_for('static', filename='images/logopink.png') }}" alt="...">
+                        <h2>KGW</h2>
+
+                        
+                    </div>
+                </a>
+                <div class="group">
+                    <svg class="icon" aria-hidden="true" viewBox="0 0 24 24"><g><path d="M21.53 20.47l-3.66-3.66C19.195 15.24 20 13.214 20 11c0-4.97-4.03-9-9-9s-9 4.03-9 9 4.03 9 9 9c2.215 0 4.24-.804 5.808-2.13l3.66 3.66c.147.146.34.22.53.22s.385-.073.53-.22c.295-.293.295-.767.002-1.06zM3.5 11c0-4.135 3.365-7.5 7.5-7.5s7.5 3.365 7.5 7.5-3.365 7.5-7.5 7.5-7.5-3.365-7.5-7.5z"></path></g></svg>
+                    <input placeholder="Search" type="search" class="input">
+                </div>
+                <div class="links">
+                    <ul>
+                        <li><i class="fa-solid fa-store"></i> Store</li>
+                        <li><a href="login.html"><i class="fa-solid fa-user"></i> Account</a></li>
+                        <li><i class="fa-solid fa-heart"></i> Wishlist</li>
+                        <li><i class="fa-solid fa-cart-shopping"></i> Cart</li>
+                    </ul>
+                </div>
+				
+            </div>
+	    </nav>
+   </section>
+    <section>
+        <div class="headerlinks">
+            <ul>
+                <li>Valentine's day 2025</li>
+                <li><a href="{{url_for('Diamonds')}}">Gold with Lab Diamonds</a></li>
+                <li>Personalized Jewellery</li>
+                <li>Gift stored</li>
+                <li>Men's Jewellery</li>
+                <li>Latest Collections</li>
+            </ul>
+        </div>
+    </section>
+
+    
+
+<div class="container">
+  <div class="image-section">
+    <img class="image-section1" src="https://www.giva.co/cdn/shop/files/GDLPD0276_1_1a8361a3-de7a-4e82-9550-96f48930a383.jpg?v=1728572835&width=360" alt="Product 11">
+    </div>
+  <div class="details-section">
+    <h1>Gold Eternal Diamond pendant</h1>
+    <div class="rating">★★★★☆ (69 reviews)</div>
+    <div class="price">₹10,423 <span class="old-price">₹14,999</span></div>
+    <p>Made With Pure 925 Silver</p>
+
+    <div class="checkbox-group">
+      <label><input type="checkbox"> Add gift wrap for ₹50</label>
+    </div>
+
+    <div class="actions">
+      <button class="btn"> <a href="{{url_for('orderplaced')}}">Buy Now</a> </button>
+      <button class="btn">Add to Cart</button>
+    </div>
+
+    <div class="section">
+      <h3>Offers For You</h3>
+      <ul>
+        <li>Flat ₹500 off on orders above ₹2999</li>
+        <li>Flat 20% off on Silver Jewellery above ₹5999</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h3>Frequently Bought Together</h3>
+      <label><input type="checkbox"> Earrings and Pendant - ₹299</label><br>
+      <label><input type="checkbox"> Wonderful Love Gift Box - ₹499</label><br>
+      <label><input type="checkbox"> Order on COD </label>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

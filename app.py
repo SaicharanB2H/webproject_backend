@@ -25,7 +25,13 @@ def account():
 def userReg():
     return render_template('user_registration.html')
 
+@app.route('/tobuy')
+def buy():
+    return render_template('buyingpage.html')
 
+@app.route('/orderplaced')
+def orderplaced():
+    return render_template('confirmpage.html')
 
 
 # Route to show the registration form
@@ -83,20 +89,20 @@ def login():
         conn.close()
 
         if user:
-            stored_password = user[4]  # Assuming password is in the 5th column
+            stored_password = user[4]  
             if check_password_hash(stored_password, password):
                 session["user_id"] = user[0]
                 session["email"] = user[3]
                 flash("Login successful!", "success")
-                return redirect(url_for("home"))  # Replace with actual dashboard route
+                return redirect(url_for("home"))  
             else:
                 flash("Incorrect password.", "danger")
         else:
             flash("Email not found.", "danger")
 
-    return render_template("login.html")  # Your HTML file
+    return render_template("login.html") 
 
 
-# Run the app
+
 if __name__ == '__main__':
     app.run(debug=True)

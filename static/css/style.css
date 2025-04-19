@@ -435,3 +435,7 @@ section{
     width: 100px;
     height: 100px;
 } */
+
+.logolink{
+    text-decoration: none;
+}
